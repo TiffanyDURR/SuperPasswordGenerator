@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="passwordmaker.css">
+    <script defer src="passwordmaker.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/159d0e16c5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> 
+    <title>Générateur de mot de passe</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Super Psswrd Generator</h1>
+        <h2>The easy solution</h2>
+    </header>
+    <main>
+    <div class="app">
+        <div id="password-container"></div>
+        <input type="text" id="password-output" value="" readonly>
+        <div class="range-container">
+            <input type="range" id="password-length" min="4" max="24" value="8"
+            oninput="document.getElementById('display-password-length').value=this.value">
+            <input type="text" id="display-password-length" value="8" readonly ">
+        </div>
+        <p class="info">Longueur du mot de passe</p>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="lowercase" checked>
+            <label for="lowercase">a-z</label>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">A-Z</label>
+            <input type="checkbox" id="number">
+            <label for="number">0-9</label>
+            <input type="checkbox" id="symbols">
+            <label for="symbols">$-#</label>
+        </div>
+        <p class="info">Choix des options</p>
+        <button id="generateButton">Générer mot de passe</button>
+    </div>
+</main>
+<footer>
+    <span><b>Super Psswrd Generator</b> - Tous droits réservés - 2022<br/></span>
+    Le site n'utilise <b>pas de cookies</b> et stocke <b>0</b> données <i class="far fa-smile-beam"></i> ! <br/>
+    <p>Tiffany Durr</p>
+</footer>
+</body>
+</html>
